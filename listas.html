@@ -6,6 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jogos Jogados</title>
         <link rel="stylesheet" href="estilopb.css" />
+        <style>
+            .serie {
+                color: green;
+            }
+            .filme {
+                color: blue;
+            }
+            .jogo {
+                color: orangered;
+            }
+            p > .jogo {
+                border-bottom: dashed;
+            }
+        </style>
     </head>
 
     <body>
@@ -24,25 +38,26 @@
         <p>Três ultimos jogos que joguei:</p>
 
         <ol>
-            <li> War</li>
-            <li> God of War</li>
-            <li> A.V.A</li>
+            <li class="jogo"> War</li>
+            <li class="jogo"> God of War</li>
+            <li class="jogo"> A.V.A</li>
         </ol>
+        <p>E o <span class="jogo">Elden King</span> foi meu preferido.</p>
 
         <p>Filmes e Séries que assisti:</p>
         <ul>
             <li>
                 <div>Filmes</div>
                 <ul>
-                    <li style="color: blue;">Interstellar</li>
-                    <li style="color: blue;">Hellboy</li>
+                    <li class="filme">Interstellar</li>
+                    <li class="filme">Hellboy</li>
                 </ul>
             </li>
             
             <li><div>Séries</div>
-                <ul style="color: green;">
-                    <li>Carnival Row</li>
-                    <li>Las of Us</li>
+                <ul>
+                    <li class="serie">Carnival Row</li>
+                    <li class="serie">Las of Us</li>
                 </ul>
             </li>
         </ul>
